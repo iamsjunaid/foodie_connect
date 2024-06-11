@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import classes from './main-header.module.css';
 
 export default function MainHeader() {
   const logoImg = {
@@ -7,18 +7,13 @@ export default function MainHeader() {
   };
 
   return (
-    <header>
-      <Link href="/">
-        <Image
-          src={logoImg.src}
-          alt="A plate with food on it"
-          width={1000}
-          height={1000}
-        />
+    <header className={classes.header}>
+      <Link href="/" className={classes.logo}>
+        <img src={logoImg.src} alt="A plate with food on it" />
         NextLevel Food
       </Link>
 
-      <nav>
+      <nav className={classes.nav}>
         <ul>
           <li>
             <Link href="/meals">Browse Meals</Link>
