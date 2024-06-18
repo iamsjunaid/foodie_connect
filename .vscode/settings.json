@@ -1,4 +1,4 @@
-{
+{ 
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -8,5 +8,11 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "material-icon-theme.files.associations": {
+
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  }
 }
